@@ -1,0 +1,455 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation "Navegación principal" [ref=e3]:
+    - generic [ref=e4]:
+      - link "Eternamente — inicio" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - text: Eternamente
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Cómo funciona" [ref=e8] [cursor=pointer]:
+            - /url: "#como-funciona"
+        - listitem [ref=e9]:
+          - link "Planes" [ref=e10] [cursor=pointer]:
+            - /url: "#planes"
+        - listitem [ref=e11]:
+          - link "Comunidad" [ref=e12] [cursor=pointer]:
+            - /url: "#comunidad"
+        - listitem [ref=e13]:
+          - link "FAQ" [ref=e14] [cursor=pointer]:
+            - /url: "#faq"
+        - listitem [ref=e15]:
+          - link "Crear memorial" [ref=e16] [cursor=pointer]:
+            - /url: "#planes"
+  - main [ref=e17]:
+    - region "El lugar donde tu mascota vive para siempre" [ref=e18]:
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Más de 12.000 mascotas ya tienen su lugar aquí
+        - heading "El lugar donde tu mascota vive para siempre" [level=1] [ref=e22]:
+          - text: El lugar donde tu mascota
+          - emphasis [ref=e23]: vive para siempre
+        - paragraph [ref=e24]:
+          - text: Convertimos tus fotos reales en un avatar digital de tu mascota.
+          - text: Un espacio permanente para el recuerdo, el amor y el duelo.
+        - generic [ref=e25]:
+          - link "Crear el memorial de tu mascota" [ref=e26] [cursor=pointer]:
+            - /url: "#planes"
+            - img [ref=e27]
+            - text: Crear el memorial de tu mascota
+          - link "Ver un ejemplo de memorial →" [ref=e29] [cursor=pointer]:
+            - /url: "#comunidad"
+      - generic:
+        - img
+        - img
+        - img
+    - region "Más que un recuerdo. Una presencia." [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: El concepto
+          - heading "Más que un recuerdo. Una presencia." [level=2] [ref=e34]:
+            - text: Más que un recuerdo.
+            - text: Una presencia.
+          - paragraph [ref=e35]: Un post en Instagram es un gesto hermoso, pero el algoritmo lo entierra en días y nadie que no te conozca lo verá. Eternamente es un espacio construido desde cero para que el vínculo con tu mascota no tenga fecha de vencimiento — y para que quienes la amaron puedan seguir visitándola.
+        - generic [ref=e36]:
+          - article [ref=e37]:
+            - img [ref=e39]
+            - heading "Tus fotos + nuestra IA = tu mascota animada" [level=3] [ref=e46]
+            - paragraph [ref=e47]: Subís las fotos que ya tenés en el celular. Nosotros generamos un avatar animado que la representa tal como era. Sin tecnicismos, sin equipos especiales, en minutos.
+          - article [ref=e48]:
+            - img [ref=e50]
+            - heading "Un espacio permanente que no desaparece" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Sin algoritmos, sin publicidades, sin expiración. El memorial existe mientras vos quieras. Protegido, privado o público según tu elección — siempre bajo tu control.
+          - article [ref=e56]:
+            - img [ref=e58]
+            - heading "Una comunidad de personas que entienden lo que sentís" [level=3] [ref=e63]
+            - paragraph [ref=e64]: El duelo por una mascota es real y profundo. Aquí estás rodeado de personas que lo saben de primera mano. Sin tener que explicar por qué llorás.
+    - region "Así funciona" [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: El proceso
+          - heading "Así funciona" [level=2] [ref=e69]
+          - paragraph [ref=e70]: En cuatro pasos simples, tu mascota tiene su espacio para siempre. No necesitás ningún conocimiento técnico.
+        - list "Pasos para crear un memorial" [ref=e71]:
+          - listitem [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e74]: "01"
+              - img [ref=e76]
+            - generic [ref=e81]:
+              - heading "Subís fotos y videos desde el celular" [level=3] [ref=e82]
+              - paragraph [ref=e83]: Elegís las imágenes que más la/lo representen. Con tres o cuatro ya alcanza para empezar, pero cuantas más, más fiel será el avatar.
+          - listitem [ref=e84]:
+            - generic [ref=e85]:
+              - generic [ref=e86]: "02"
+              - img [ref=e88]
+            - generic [ref=e91]:
+              - heading "Nuestra IA genera un avatar animado" [level=3] [ref=e92]
+              - paragraph [ref=e93]: En minutos, el sistema crea un avatar digital que representa a tu mascota tal como era — con su pelaje, su postura y su energía. Podés editarlo hasta que sea perfecto.
+          - listitem [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: "03"
+              - img [ref=e98]
+            - generic [ref=e103]:
+              - heading "Personalizás su espacio" [level=3] [ref=e104]
+              - paragraph [ref=e105]: Escribís su historia de vida, añadís recuerdos, elegís música de fondo. El memorial es tan único como ella/él fue.
+          - listitem [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: "04"
+              - img [ref=e110]
+            - generic [ref=e115]:
+              - heading "Compartís con familia y amigos" [level=3] [ref=e116]
+              - paragraph [ref=e117]: Enviás el link a quienes también la/lo quisieron. Pueden dejar mensajes, fotos y recuerdos desde donde estén, cuando quieran.
+    - region "Elegí el lugar que se merece" [ref=e118]:
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - paragraph [ref=e121]: Planes y precios
+          - heading "Elegí el lugar que se merece" [level=2] [ref=e122]
+          - paragraph [ref=e123]: Sin contratos. Sin complicaciones. Podés cambiar de plan cuando quieras.
+        - group "Tipo de pago" [ref=e124]:
+          - button "Mensual" [pressed] [ref=e125] [cursor=pointer]
+          - button "Pago único" [ref=e126] [cursor=pointer]
+          - generic [ref=e127]: Ahorrá hasta 30%
+        - generic [ref=e128]:
+          - article "Plan Recuerdo" [ref=e129]:
+            - generic [ref=e130]:
+              - heading "Recuerdo" [level=3] [ref=e131]
+              - generic [ref=e133]: $9.99/mes
+              - paragraph [ref=e134]: Para honrar su memoria
+            - list "Incluye" [ref=e135]:
+              - listitem [ref=e136]:
+                - img [ref=e138]
+                - text: Perfil conmemorativo con foto principal
+              - listitem [ref=e140]:
+                - img [ref=e142]
+                - text: Galería de hasta 30 fotos
+              - listitem [ref=e144]:
+                - img [ref=e146]
+                - text: Historia de vida en texto libre
+              - listitem [ref=e148]:
+                - img [ref=e150]
+                - text: Acceso público o privado configurable
+              - listitem [ref=e152]:
+                - img [ref=e154]
+                - text: Sin fecha de expiración
+            - link "Empezar con Recuerdo" [ref=e156] [cursor=pointer]:
+              - /url: "#"
+          - article "Plan Memorial — más elegido" [ref=e157]:
+            - generic [ref=e158]: Más elegido
+            - generic [ref=e159]:
+              - heading "Memorial" [level=3] [ref=e160]
+              - generic [ref=e162]: $19.99/mes
+              - paragraph [ref=e163]: Con avatar animado
+            - list "Incluye" [ref=e164]:
+              - listitem [ref=e165]:
+                - img [ref=e167]
+                - text: Todo lo del plan Recuerdo
+              - listitem [ref=e169]:
+                - img [ref=e171]
+                - strong [ref=e173]: Avatar 2D animado generado por IA
+              - listitem [ref=e174]:
+                - img [ref=e176]
+                - text: Galería ilimitada de fotos y videos (5 GB)
+              - listitem [ref=e178]:
+                - img [ref=e180]
+                - text: Música de fondo personalizable
+              - listitem [ref=e182]:
+                - img [ref=e184]
+                - text: Mensajes de condolencia de familia y amigos
+              - listitem [ref=e186]:
+                - img [ref=e188]
+                - text: Árbol familiar de mascotas
+              - listitem [ref=e190]:
+                - img [ref=e192]
+                - text: Acceso prioritario a nuevas funciones
+            - link "Empezar con Memorial" [ref=e194] [cursor=pointer]:
+              - /url: "#"
+          - article "Plan Legado" [ref=e195]:
+            - generic [ref=e196]:
+              - heading "Legado" [level=3] [ref=e197]
+              - generic [ref=e199]: $39.99/mes
+              - paragraph [ref=e200]: El homenaje más completo
+            - list "Incluye" [ref=e201]:
+              - listitem [ref=e202]:
+                - img [ref=e204]
+                - text: Todo lo del plan Memorial
+              - listitem [ref=e206]:
+                - img [ref=e208]
+                - strong [ref=e210]: Avatar 3D fotorrealista
+                - text: con movimiento procedural
+              - listitem [ref=e211]:
+                - img [ref=e213]
+                - text: Video memorial generado automáticamente
+              - listitem [ref=e215]:
+                - img [ref=e217]
+                - text: Inclusión en el Cementerio Mundial
+              - listitem [ref=e219]:
+                - img [ref=e221]
+                - text: Descarga de assets en alta resolución
+              - listitem [ref=e223]:
+                - img [ref=e225]
+                - text: Badge especial y página destacada
+              - listitem [ref=e227]:
+                - img [ref=e229]
+                - text: 1 sesión con especialista en duelo animal
+            - link "Empezar con Legado" [ref=e231] [cursor=pointer]:
+              - /url: "#"
+    - region "Mascotas de todo el mundo que ya tienen su lugar aquí" [ref=e232]:
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - paragraph [ref=e235]: Cementerio mundial
+          - heading "Mascotas de todo el mundo que ya tienen su lugar aquí" [level=2] [ref=e236]
+          - paragraph [ref=e237]: Cada card es una vida amada, recordada para siempre.
+        - generic "Galería de mascotas memorizadas" [ref=e238]:
+          - article "Luna, Buenos Aires, 2010 a 2023" [ref=e239] [cursor=pointer]:
+            - generic [ref=e240]: 🐕
+            - generic [ref=e241]:
+              - paragraph [ref=e242]: Luna
+              - paragraph [ref=e243]: Buenos Aires · 2010–2023
+          - article "Copito, Córdoba, 2015 a 2024" [ref=e244] [cursor=pointer]:
+            - generic [ref=e245]: 🐈
+            - generic [ref=e246]:
+              - paragraph [ref=e247]: Copito
+              - paragraph [ref=e248]: Córdoba · 2015–2024
+          - article "Max, Madrid, 2012 a 2023" [ref=e249] [cursor=pointer]:
+            - generic [ref=e250]: 🐩
+            - generic [ref=e251]:
+              - paragraph [ref=e252]: Max
+              - paragraph [ref=e253]: Madrid · 2012–2023
+          - article "Nube, Montevideo, 2018 a 2024" [ref=e254] [cursor=pointer]:
+            - generic [ref=e255]: 🐇
+            - generic [ref=e256]:
+              - paragraph [ref=e257]: Nube
+              - paragraph [ref=e258]: Montevideo · 2018–2024
+          - article "Mochi, Santiago, 2016 a 2025" [ref=e259] [cursor=pointer]:
+            - generic [ref=e260]: 🐱
+            - generic [ref=e261]:
+              - paragraph [ref=e262]: Mochi
+              - paragraph [ref=e263]: Santiago · 2016–2025
+          - article "Rocky, Bogotá, 2013 a 2023" [ref=e264] [cursor=pointer]:
+            - generic [ref=e265]: 🦮
+            - generic [ref=e266]:
+              - paragraph [ref=e267]: Rocky
+              - paragraph [ref=e268]: Bogotá · 2013–2023
+          - article "Mía, México DF, 2017 a 2024" [ref=e269] [cursor=pointer]:
+            - generic [ref=e270]: 😺
+            - generic [ref=e271]:
+              - paragraph [ref=e272]: Mía
+              - paragraph [ref=e273]: México DF · 2017–2024
+          - article "Simba, Lima, 2014 a 2025" [ref=e274] [cursor=pointer]:
+            - generic [ref=e275]: 🐶
+            - generic [ref=e276]:
+              - paragraph [ref=e277]: Simba
+              - paragraph [ref=e278]: Lima · 2014–2025
+          - article "Bella, Barcelona, 2011 a 2023" [ref=e279] [cursor=pointer]:
+            - generic [ref=e280]: 🐕‍🦺
+            - generic [ref=e281]:
+              - paragraph [ref=e282]: Bella
+              - paragraph [ref=e283]: Barcelona · 2011–2023
+          - article "Oliver, Lisboa, 2019 a 2024" [ref=e284] [cursor=pointer]:
+            - generic [ref=e285]: 🐈‍⬛
+            - generic [ref=e286]:
+              - paragraph [ref=e287]: Oliver
+              - paragraph [ref=e288]: Lisboa · 2019–2024
+          - article "Coco, Asunción, 2016 a 2025" [ref=e289] [cursor=pointer]:
+            - generic [ref=e290]: 🐾
+            - generic [ref=e291]:
+              - paragraph [ref=e292]: Coco
+              - paragraph [ref=e293]: Asunción · 2016–2025
+          - article "Perla, Rosario, 2012 a 2024" [ref=e294] [cursor=pointer]:
+            - generic [ref=e295]: 🐾
+            - generic [ref=e296]:
+              - paragraph [ref=e297]: Perla
+              - paragraph [ref=e298]: Rosario · 2012–2024
+        - link "Explorar el cementerio mundial" [ref=e300] [cursor=pointer]:
+          - /url: "#"
+    - region "Lo que dicen quienes ya los visitan" [ref=e301]:
+      - generic [ref=e302]:
+        - generic [ref=e303]:
+          - paragraph [ref=e304]: Testimonios
+          - heading "Lo que dicen quienes ya los visitan" [level=2] [ref=e305]
+        - generic [ref=e306]:
+          - blockquote [ref=e307]:
+            - text: "\""
+            - generic [ref=e308]: ★★★★★
+            - paragraph [ref=e309]: "\"No podía creer verla moverse de nuevo. Fue un llanto de alivio. Como si una parte de ella todavía estuviera aquí, esperándome.\""
+            - generic [ref=e310]:
+              - generic [ref=e311]: V
+              - generic [ref=e312]:
+                - generic [ref=e313]: Valentina
+                - paragraph [ref=e314]: 32 años · Buenos Aires
+          - blockquote [ref=e315]:
+            - text: "\""
+            - generic [ref=e316]: ★★★★★
+            - paragraph [ref=e317]: "\"Mis hijos entran al memorial de Copito todas las semanas. Les ayudó muchísimo a entender que el amor no se va aunque el cuerpo sí.\""
+            - generic [ref=e318]:
+              - generic [ref=e319]: M
+              - generic [ref=e320]:
+                - generic [ref=e321]: Martín
+                - paragraph [ref=e322]: 41 años · Córdoba
+          - blockquote [ref=e323]:
+            - text: "\""
+            - generic [ref=e324]: ★★★★★
+            - paragraph [ref=e325]: "\"Lo compartí con mi mamá que estaba destrozada. No sé qué hubiéramos hecho sin esto. Le dio un lugar para ir a visitarlo cuando lo extraña.\""
+            - generic [ref=e326]:
+              - generic [ref=e327]: S
+              - generic [ref=e328]:
+                - generic [ref=e329]: Sofía
+                - paragraph [ref=e330]: 28 años · Montevideo
+    - region "¿Por qué no alcanza con Instagram?" [ref=e331]:
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - paragraph [ref=e334]: La diferencia
+          - heading "¿Por qué no alcanza con Instagram?" [level=2] [ref=e335]
+          - paragraph [ref=e336]: Las redes sociales no fueron diseñadas para el duelo ni para la permanencia.
+        - table "Comparación entre redes sociales y Eternamente" [ref=e337]:
+          - row "Redes Sociales Eternamente" [ref=e338]:
+            - columnheader "Redes Sociales" [ref=e339]:
+              - img [ref=e340]
+              - text: Redes Sociales
+            - columnheader "Eternamente" [ref=e344]:
+              - img [ref=e345]
+              - text: Eternamente
+          - row "Los posts se pierden con el algoritmo Permanente, sin algoritmo" [ref=e347]:
+            - cell "Los posts se pierden con el algoritmo" [ref=e348]:
+              - generic [ref=e349]: ✗
+              - text: Los posts se pierden con el algoritmo
+            - cell "Permanente, sin algoritmo" [ref=e350]:
+              - generic [ref=e351]: ✓
+              - text: Permanente, sin algoritmo
+          - row "Sin comunidad real de pet parents Comunidad que entiende tu dolor" [ref=e352]:
+            - cell "Sin comunidad real de pet parents" [ref=e353]:
+              - generic [ref=e354]: ✗
+              - text: Sin comunidad real de pet parents
+            - cell "Comunidad que entiende tu dolor" [ref=e355]:
+              - generic [ref=e356]: ✓
+              - text: Comunidad que entiende tu dolor
+          - row "Solo fotos estáticas Avatar animado de tu mascota" [ref=e357]:
+            - cell "Solo fotos estáticas" [ref=e358]:
+              - generic [ref=e359]: ✗
+              - text: Solo fotos estáticas
+            - cell "Avatar animado de tu mascota" [ref=e360]:
+              - generic [ref=e361]: ✓
+              - text: Avatar animado de tu mascota
+          - row "La cuenta puede borrarse o bloquearse Espacio protegido y perpetuo" [ref=e362]:
+            - cell "La cuenta puede borrarse o bloquearse" [ref=e363]:
+              - generic [ref=e364]: ✗
+              - text: La cuenta puede borrarse o bloquearse
+            - cell "Espacio protegido y perpetuo" [ref=e365]:
+              - generic [ref=e366]: ✓
+              - text: Espacio protegido y perpetuo
+          - row "Nadie entiende por qué llorás por un animal Aquí todos entienden tu dolor" [ref=e367]:
+            - cell "Nadie entiende por qué llorás por un animal" [ref=e368]:
+              - generic [ref=e369]: ✗
+              - text: Nadie entiende por qué llorás por un animal
+            - cell "Aquí todos entienden tu dolor" [ref=e370]:
+              - generic [ref=e371]: ✓
+              - text: Aquí todos entienden tu dolor
+    - region "El duelo por una mascota es real. La ciencia lo respalda." [ref=e372]:
+      - generic [ref=e374]:
+        - generic [ref=e375]:
+          - paragraph [ref=e376]: Respaldo científico
+          - heading "El duelo por una mascota es real. La ciencia lo respalda." [level=2] [ref=e377]:
+            - text: El duelo por una mascota es real.
+            - text: La ciencia lo respalda.
+          - blockquote [ref=e378]:
+            - paragraph [ref=e379]: "\"Mantener un vínculo simbólico con quien perdiste no prolonga el dolor: lo integra.\""
+            - generic [ref=e380]:
+              - text: — Modelo
+              - emphasis [ref=e381]: Continuing Bonds
+              - text: · Klass, Silverman & Nickman (1996)
+          - paragraph [ref=e382]: "Los vínculos simbólicos que mantenemos con quienes perdemos forman parte natural del proceso de duelo saludable. Eternamente está diseñado con este principio como base: no para negar la pérdida, sino para honrar el amor que sigue presente."
+          - link "Aprendé más sobre el duelo y las mascotas →" [ref=e383] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e384]:
+          - paragraph [ref=e385]: Avalado por profesionales
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - text: Psicología Animal
+              - text: Argentina
+            - generic [ref=e388]:
+              - text: Asociación de
+              - text: Duelo Pet
+            - generic [ref=e389]:
+              - text: Colegio de
+              - text: Psicólogos
+            - generic [ref=e390]:
+              - text: PetGrief
+              - text: Institute
+    - region "Todo lo que necesitás saber" [ref=e391]:
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - paragraph [ref=e394]: Preguntas frecuentes
+          - heading "Todo lo que necesitás saber" [level=2] [ref=e395]
+        - generic [ref=e396]:
+          - generic [ref=e397]:
+            - term [ref=e398]:
+              - button "¿Cómo se genera el avatar de mi mascota?" [ref=e399] [cursor=pointer]: ¿Cómo se genera el avatar de mi mascota?
+            - definition:
+              - paragraph [ref=e401]: Subís entre 3 y 10 fotos de tu mascota desde distintos ángulos y con buena iluminación. Nuestro sistema analiza las fotos para capturar sus rasgos únicos — color de pelaje, forma de la cara, postura característica — y genera un avatar animado en minutos. No necesitás ningún conocimiento técnico, todo el proceso es guiado paso a paso.
+          - generic [ref=e402]:
+            - term [ref=e403]:
+              - button "¿Qué pasa con el memorial si cancelo mi suscripción?" [ref=e404] [cursor=pointer]: ¿Qué pasa con el memorial si cancelo mi suscripción?
+            - definition:
+              - paragraph [ref=e406]: El perfil conmemorativo básico permanece activo siempre, aunque dejes de pagar. Las funciones premium (avatar animado, galería extendida, música) quedan pausadas, pero todo el contenido y las fotos se conservan intactos. Cuando quieras reactivar, el memorial sigue exactamente donde lo dejaste.
+          - generic [ref=e407]:
+            - term [ref=e408]:
+              - button "¿Pueden acceder otras personas al memorial?" [ref=e409] [cursor=pointer]: ¿Pueden acceder otras personas al memorial?
+            - definition:
+              - paragraph [ref=e411]: Vos elegís. Podés configurarlo como público (visible para cualquier persona con el link), privado (solo vos), o compartido (solo las personas que vos invitás con un código). Podés cambiar esta configuración en cualquier momento desde tu panel.
+          - generic [ref=e412]:
+            - term [ref=e413]:
+              - button "¿Qué fotos necesito subir para el avatar?" [ref=e414] [cursor=pointer]: ¿Qué fotos necesito subir para el avatar?
+            - definition:
+              - paragraph [ref=e416]: Con 3 fotos podés empezar — idealmente una de frente, una de perfil y una de cuerpo entero. Fotos con luz natural funcionan mucho mejor que con flash. Mientras más fotos subás, más fiel será el avatar. Podés usar fotos del celular sin ningún problema, no hace falta equipo especial.
+          - generic [ref=e417]:
+            - term [ref=e418]:
+              - button "¿Es seguro subir fotos personales?" [ref=e419] [cursor=pointer]: ¿Es seguro subir fotos personales?
+            - definition:
+              - paragraph [ref=e421]: Absolutamente. Las fotos se almacenan con cifrado en servidores seguros y nunca se comparten con terceros ni se usan para entrenar modelos de IA de otros. Solo vos (y las personas que autorices) pueden verlas. Podés eliminarlas en cualquier momento desde tu panel.
+          - generic [ref=e422]:
+            - term [ref=e423]:
+              - button "¿Puedo crear un memorial para más de una mascota?" [ref=e424] [cursor=pointer]: ¿Puedo crear un memorial para más de una mascota?
+            - definition:
+              - paragraph [ref=e426]: Sí, podés crear tantos memoriales como necesites desde la misma cuenta. Cada mascota tiene su propio espacio, perfil y avatar. Con el plan Memorial podés vincularlos en el árbol familiar de mascotas para mostrar todas sus historias juntas.
+  - contentinfo [ref=e427]:
+    - generic [ref=e428]:
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - paragraph [ref=e431]: Eternamente
+          - paragraph [ref=e432]: El lugar donde tu mascota vive para siempre.
+        - navigation "Links del footer" [ref=e433]:
+          - list [ref=e434]:
+            - listitem [ref=e435]:
+              - link "Inicio" [ref=e436] [cursor=pointer]:
+                - /url: "#inicio"
+            - listitem [ref=e437]:
+              - link "Planes" [ref=e438] [cursor=pointer]:
+                - /url: "#planes"
+            - listitem [ref=e439]:
+              - link "Comunidad" [ref=e440] [cursor=pointer]:
+                - /url: "#comunidad"
+            - listitem [ref=e441]:
+              - link "Blog" [ref=e442] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e443]:
+              - link "Soporte" [ref=e444] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e445]:
+              - link "Términos" [ref=e446] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e447]:
+              - link "Privacidad" [ref=e448] [cursor=pointer]:
+                - /url: "#"
+        - generic "Redes sociales" [ref=e449]:
+          - link "Instagram de Eternamente" [ref=e450] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e451]
+          - link "TikTok de Eternamente" [ref=e455] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e456]
+          - link "Facebook de Eternamente" [ref=e458] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e459]
+      - generic [ref=e461]:
+        - paragraph [ref=e462]: © 2026 Eternamente. Todos los derechos reservados.
+        - paragraph [ref=e463]: Porque el amor no tiene fecha de vencimiento.

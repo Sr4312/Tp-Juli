@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eternamente — El lugar donde tu mascota vive para siempre. Memorials digitales con avatar animado generado por IA." />
+  <title>Eternamente · El lugar donde tu mascota vive para siempre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- SKIP TO CONTENT -->
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="Eternamente — inicio">
+        <span class="nav__logo-word">Eternamente</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#" class="btn btn--primary btn--sm" data-modal="create">Crear memorial</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <ul>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#" class="btn btn--primary" data-modal="create">Crear memorial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════
+         SECTION 1 — HERO
+    ═══════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-heading">
+      <canvas class="hero__particles" id="particles" aria-hidden="true"></canvas>
+      <div class="hero__bg-glow" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">
+          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+          Más de 12.000 mascotas ya tienen su lugar aquí
+        </p>
+        <h1 class="hero__title" id="hero-heading">
+          El lugar donde tu mascota<br/>
+          <em>vive para siempre</em>
+        </h1>
+        <p class="hero__subtitle">
+          Convertimos tus fotos reales en un avatar digital de tu mascota.<br class="hero__br"/>
+          Un espacio permanente para el recuerdo, el amor y el duelo.
+        </p>
+        <div class="hero__ctas">
+          <a href="#" class="btn btn--primary btn--lg" data-modal="create">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Crear el memorial de tu mascota
+          </a>
+          <a href="#" class="btn btn--ghost btn--lg" data-modal="example">Ver un ejemplo de memorial →</a>
+        </div>
+      </div>
+
+      <!-- Silhouettes background -->
+      <div class="hero__silhouettes" aria-hidden="true">
+        <svg class="silhouette silhouette--dog" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="100" cy="130" rx="65" ry="42" fill="currentColor"/>
+          <circle cx="100" cy="72" r="38" fill="currentColor"/>
+          <ellipse cx="73" cy="52" rx="14" ry="22" fill="currentColor" transform="rotate(-18 73 52)"/>
+          <ellipse cx="127" cy="52" rx="14" ry="22" fill="currentColor" transform="rotate(18 127 52)"/>
+          <ellipse cx="70" cy="155" rx="12" ry="22" fill="currentColor"/>
+          <ellipse cx="130" cy="155" rx="12" ry="22" fill="currentColor"/>
+        </svg>
+        <svg class="silhouette silhouette--cat" viewBox="0 0 180 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="90" cy="125" rx="58" ry="38" fill="currentColor"/>
+          <circle cx="90" cy="72" r="32" fill="currentColor"/>
+          <polygon points="60,50 52,20 76,44" fill="currentColor"/>
+          <polygon points="120,50 128,20 104,44" fill="currentColor"/>
+          <ellipse cx="60" cy="148" rx="11" ry="20" fill="currentColor"/>
+          <ellipse cx="120" cy="148" rx="11" ry="20" fill="currentColor"/>
+          <path d="M80 155 Q90 165 100 155" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none"/>
+        </svg>
+        <svg class="silhouette silhouette--bird" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="60" cy="75" rx="28" ry="22" fill="currentColor"/>
+          <circle cx="60" cy="45" r="20" fill="currentColor"/>
+          <path d="M20 55 Q45 35 60 50" fill="currentColor"/>
+          <path d="M100 55 Q75 35 60 50" fill="currentColor"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 2 — QUÉ ES ESTO
+    ═══════════════════════════════════════ -->
+    <section class="features" id="que-es" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">El concepto</p>
+          <h2 class="section-title" id="features-heading">Más que un recuerdo.<br/>Una presencia.</h2>
+          <p class="section-subtitle">
+            Un post en Instagram es un gesto hermoso, pero el algoritmo lo entierra en días y nadie que no te conozca lo verá. Eternamente es un espacio construido desde cero para que el vínculo con tu mascota no tenga fecha de vencimiento — y para que quienes la amaron puedan seguir visitándola.
+          </p>
+        </div>
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="28" cy="28" r="27" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+                <rect x="16" y="18" width="18" height="22" rx="2.5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="25" cy="26" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 33l4-3.5 3 3 3-4 5 6.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M36 15l3 3-3 3M39 18h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M36 28l3 3-3 3M39 31h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Tus fotos + nuestra IA = tu mascota animada</h3>
+            <p class="feature-card__desc">Subís las fotos que ya tenés en el celular. Nosotros generamos un avatar animado que la representa tal como era. Sin tecnicismos, sin equipos especiales, en minutos.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 50S10 38 10 22a18 18 0 1 1 36 0c0 16-18 28-18 28z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M28 16v8M24 20h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="28" cy="20" r="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Un espacio permanente que no desaparece</h3>
+            <p class="feature-card__desc">Sin algoritmos, sin publicidades, sin expiración. El memorial existe mientras vos quieras. Protegido, privado o público según tu elección — siempre bajo tu control.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="22" r="8" stroke="currentColor" stroke-width="2"/>
+                <circle cx="36" cy="22" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M6 46c0-7.18 6.27-13 14-13h16c7.73 0 14 5.82 14 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M28 36v6M25 42h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Una comunidad de personas que entienden lo que sentís</h3>
+            <p class="feature-card__desc">El duelo por una mascota es real y profundo. Aquí estás rodeado de personas que lo saben de primera mano. Sin tener que explicar por qué llorás.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 3 — ASÍ FUNCIONA
+    ═══════════════════════════════════════ -->
+    <section class="how" id="como-funciona" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">El proceso</p>
+          <h2 class="section-title" id="how-heading">Así funciona</h2>
+          <p class="section-subtitle">En cuatro pasos simples, tu mascota tiene su espacio para siempre. No necesitás ningún conocimiento técnico.</p>
+        </div>
+        <ol class="how__steps" aria-label="Pasos para crear un memorial">
+
+          <li class="how__step reveal">
+            <div class="how__step-visual">
+              <div class="how__step-number" aria-hidden="true">01</div>
+              <div class="how__step-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <rect x="8" y="16" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="24" cy="28" r="6" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M18 16l3-6h6l3 6" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                  <circle cx="34" cy="21" r="2" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <div class="how__step-content">
+              <h3>Subís fotos y videos desde el celular</h3>
+              <p>Elegís las imágenes que más la/lo representen. Con tres o cuatro ya alcanza para empezar, pero cuantas más, más fiel será el avatar.</p>
+            </div>
+          </li>
+
+          <li class="how__step reveal">
+            <div class="how__step-visual">
+              <div class="how__step-number" aria-hidden="true">02</div>
+              <div class="how__step-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M24 6l4.5 9 10 1.5-7.25 7 1.75 10L24 29l-9 4.5 1.75-10L9.5 16.5l10-1.5z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                  <path d="M16 39s-5 2.5-5 7M32 39s5 2.5 5 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="how__step-content">
+              <h3>Nuestra IA genera un avatar animado</h3>
+              <p>En minutos, el sistema crea un avatar digital que representa a tu mascota tal como era — con su pelaje, su postura y su energía. Podés editarlo hasta que sea perfecto.</p>
+            </div>
+          </li>
+
+          <li class="how__step reveal">
+            <div class="how__step-visual">
+              <div class="how__step-number" aria-hidden="true">03</div>
+              <div class="how__step-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M16 18h16M16 24h10M16 30h13" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="34" cy="34" r="7" fill="var(--lavender)"/>
+                  <path d="M31 34l2 2 4-3.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="how__step-content">
+              <h3>Personalizás su espacio</h3>
+              <p>Escribís su historia de vida, añadís recuerdos, elegís música de fondo. El memorial es tan único como ella/él fue.</p>
+            </div>
+          </li>
+
+          <li class="how__step reveal">
+            <div class="how__step-visual">
+              <div class="how__step-number" aria-hidden="true">04</div>
+              <div class="how__step-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <circle cx="38" cy="12" r="6" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="12" cy="24" r="6" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="38" cy="36" r="6" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M18 21l14-6M18 27l14 6" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="how__step-content">
+              <h3>Compartís con familia y amigos</h3>
+              <p>Enviás el link a quienes también la/lo quisieron. Pueden dejar mensajes, fotos y recuerdos desde donde estén, cuando quieran.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 4 — PLANES
+    ═══════════════════════════════════════ -->
+    <section class="plans" id="planes" aria-labelledby="plans-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Planes y precios</p>
+          <h2 class="section-title" id="plans-heading">Elegí el lugar que se merece</h2>
+          <p class="section-subtitle">Sin contratos. Sin complicaciones. Podés cambiar de plan cuando quieras.</p>
+        </div>
+
+        <div class="plans__toggle reveal" role="group" aria-label="Tipo de pago">
+          <button class="toggle-btn active" data-plan="monthly" aria-pressed="true">Mensual</button>
+          <button class="toggle-btn" data-plan="once" aria-pressed="false">Pago único</button>
+          <span class="toggle-save">Ahorrá hasta 30%</span>
+        </div>
+
+        <div class="plans__grid">
+
+          <article class="plan-card reveal" aria-label="Plan Recuerdo">
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Recuerdo</h3>
+              <div class="plan-card__price">
+                <span class="price monthly">$9.99<small>/mes</small></span>
+                <span class="price once" hidden>$49<small> pago único</small></span>
+              </div>
+              <p class="plan-card__tagline">Para honrar su memoria</p>
+            </div>
+            <ul class="plan-card__features" aria-label="Incluye">
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Perfil conmemorativo con foto principal
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Galería de hasta 30 fotos
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Historia de vida en texto libre
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Acceso público o privado configurable
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Sin fecha de expiración
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full" data-modal="create">Empezar con Recuerdo</a>
+          </article>
+
+          <article class="plan-card plan-card--featured reveal" aria-label="Plan Memorial — más elegido">
+            <div class="plan-card__badge">Más elegido</div>
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Memorial</h3>
+              <div class="plan-card__price">
+                <span class="price monthly">$19.99<small>/mes</small></span>
+                <span class="price once" hidden>$99<small> pago único</small></span>
+              </div>
+              <p class="plan-card__tagline">Con avatar animado</p>
+            </div>
+            <ul class="plan-card__features" aria-label="Incluye">
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Todo lo del plan Recuerdo
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <strong>Avatar 2D animado generado por IA</strong>
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Galería ilimitada de fotos y videos (5 GB)
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Música de fondo personalizable
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Mensajes de condolencia de familia y amigos
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Árbol familiar de mascotas
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Acceso prioritario a nuevas funciones
+              </li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--full" data-modal="create">Empezar con Memorial</a>
+          </article>
+
+          <article class="plan-card reveal" aria-label="Plan Legado">
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Legado</h3>
+              <div class="plan-card__price">
+                <span class="price monthly">$39.99<small>/mes</small></span>
+                <span class="price once" hidden>$199<small> pago único</small></span>
+              </div>
+              <p class="plan-card__tagline">El homenaje más completo</p>
+            </div>
+            <ul class="plan-card__features" aria-label="Incluye">
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Todo lo del plan Memorial
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <strong>Avatar 3D fotorrealista</strong> con movimiento procedural
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Video memorial generado automáticamente
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Inclusión en el Cementerio Mundial
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Descarga de assets en alta resolución
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                Badge especial y página destacada
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                1 sesión con especialista en duelo animal
+              </li>
+            </ul>
+            <a href="#" class="btn btn--outline btn--full" data-modal="create">Empezar con Legado</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 5 — CEMENTERIO MUNDIAL
+    ═══════════════════════════════════════ -->
+    <section class="cemetery" id="comunidad" aria-labelledby="cemetery-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Cementerio mundial</p>
+          <h2 class="section-title" id="cemetery-heading">Mascotas de todo el mundo que ya tienen su lugar aquí</h2>
+          <p class="section-subtitle">Cada card es una vida amada, recordada para siempre.</p>
+        </div>
+        <div class="cemetery__grid" aria-label="Galería de mascotas memorizadas">
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Luna, Buenos Aires, 2010 a 2023">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#EEE0F5;font-size:52px">🐕</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Luna</p>
+              <p class="pet-card__location">Buenos Aires · 2010–2023</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Copito, Córdoba, 2015 a 2024">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#F5EEE0;font-size:52px">🐈</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Copito</p>
+              <p class="pet-card__location">Córdoba · 2015–2024</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Max, Madrid, 2012 a 2023">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#E0EFF5;font-size:52px">🐩</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Max</p>
+              <p class="pet-card__location">Madrid · 2012–2023</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Nube, Montevideo, 2018 a 2024">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#F5E0EE;font-size:52px">🐇</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Nube</p>
+              <p class="pet-card__location">Montevideo · 2018–2024</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Mochi, Santiago, 2016 a 2025">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#EEF5E0;font-size:52px">🐱</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Mochi</p>
+              <p class="pet-card__location">Santiago · 2016–2025</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Rocky, Bogotá, 2013 a 2023">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#F0E8D8;font-size:52px">🦮</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Rocky</p>
+              <p class="pet-card__location">Bogotá · 2013–2023</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Mía, México DF, 2017 a 2024">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#E8D8F0;font-size:52px">😺</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Mía</p>
+              <p class="pet-card__location">México DF · 2017–2024</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Simba, Lima, 2014 a 2025">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#D8EEE8;font-size:52px">🐶</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Simba</p>
+              <p class="pet-card__location">Lima · 2014–2025</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Bella, Barcelona, 2011 a 2023">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#EEE4D8;font-size:52px">🐕‍🦺</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Bella</p>
+              <p class="pet-card__location">Barcelona · 2011–2023</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Oliver, Lisboa, 2019 a 2024">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#D8E4EE;font-size:52px">🐈‍⬛</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Oliver</p>
+              <p class="pet-card__location">Lisboa · 2019–2024</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Coco, Asunción, 2016 a 2025">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#EDD8EE;font-size:52px">🐾</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Coco</p>
+              <p class="pet-card__location">Asunción · 2016–2025</p>
+            </div>
+          </article>
+
+          <article class="pet-card reveal" tabindex="0" aria-label="Perla, Rosario, 2012 a 2024">
+            <div class="pet-card__avatar" aria-hidden="true" style="background:#D8EDEE;font-size:52px">🐾</div>
+            <div class="pet-card__overlay">
+              <p class="pet-card__name">Perla</p>
+              <p class="pet-card__location">Rosario · 2012–2024</p>
+            </div>
+          </article>
+
+        </div>
+        <div class="cemetery__cta reveal">
+          <a href="#" class="btn btn--primary">Explorar el cementerio mundial</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 6 — TESTIMONIOS
+    ═══════════════════════════════════════ -->
+    <section class="testimonials" id="testimonios" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Testimonios</p>
+          <h2 class="section-title" id="testimonials-heading">Lo que dicen quienes ya los visitan</h2>
+        </div>
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__quote">"No podía creer verla moverse de nuevo. Fue un llanto de alivio. Como si una parte de ella todavía estuviera aquí, esperándome."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">V</div>
+              <div>
+                <cite class="testimonial-card__name">Valentina</cite>
+                <p class="testimonial-card__location">32 años · Buenos Aires</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__quote">"Mis hijos entran al memorial de Copito todas las semanas. Les ayudó muchísimo a entender que el amor no se va aunque el cuerpo sí."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">M</div>
+              <div>
+                <cite class="testimonial-card__name">Martín</cite>
+                <p class="testimonial-card__location">41 años · Córdoba</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-card__quote">"Lo compartí con mi mamá que estaba destrozada. No sé qué hubiéramos hecho sin esto. Le dio un lugar para ir a visitarlo cuando lo extraña."</p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">S</div>
+              <div>
+                <cite class="testimonial-card__name">Sofía</cite>
+                <p class="testimonial-card__location">28 años · Montevideo</p>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 7 — POR QUÉ NO ALCANZA CON INSTAGRAM
+    ═══════════════════════════════════════ -->
+    <section class="compare" id="comparacion" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">La diferencia</p>
+          <h2 class="section-title" id="compare-heading">¿Por qué no alcanza con Instagram?</h2>
+          <p class="section-subtitle">Las redes sociales no fueron diseñadas para el duelo ni para la permanencia.</p>
+        </div>
+        <div class="compare__table reveal" role="table" aria-label="Comparación entre redes sociales y Eternamente">
+          <div class="compare__row compare__row--header" role="row">
+            <div role="columnheader">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              Redes Sociales
+            </div>
+            <div role="columnheader">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              Eternamente
+            </div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell"><span class="compare__x" aria-hidden="true">✗</span> Los posts se pierden con el algoritmo</div>
+            <div role="cell"><span class="compare__check" aria-hidden="true">✓</span> Permanente, sin algoritmo</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell"><span class="compare__x" aria-hidden="true">✗</span> Sin comunidad real de pet parents</div>
+            <div role="cell"><span class="compare__check" aria-hidden="true">✓</span> Comunidad que entiende tu dolor</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell"><span class="compare__x" aria-hidden="true">✗</span> Solo fotos estáticas</div>
+            <div role="cell"><span class="compare__check" aria-hidden="true">✓</span> Avatar animado de tu mascota</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell"><span class="compare__x" aria-hidden="true">✗</span> La cuenta puede borrarse o bloquearse</div>
+            <div role="cell"><span class="compare__check" aria-hidden="true">✓</span> Espacio protegido y perpetuo</div>
+          </div>
+          <div class="compare__row" role="row">
+            <div role="cell"><span class="compare__x" aria-hidden="true">✗</span> Nadie entiende por qué llorás por un animal</div>
+            <div role="cell"><span class="compare__check" aria-hidden="true">✓</span> Aquí todos entienden tu dolor</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 8 — PSICOLOGÍA / AVAL
+    ═══════════════════════════════════════ -->
+    <section class="science" id="ciencia" aria-labelledby="science-heading">
+      <div class="container">
+        <div class="science__inner">
+          <div class="science__text reveal">
+            <p class="section-eyebrow">Respaldo científico</p>
+            <h2 class="section-title" id="science-heading">El duelo por una mascota es real.<br/>La ciencia lo respalda.</h2>
+            <blockquote class="science__quote">
+              <p>"Mantener un vínculo simbólico con quien perdiste no prolonga el dolor: lo integra."</p>
+              <footer>— Modelo <em>Continuing Bonds</em> · Klass, Silverman &amp; Nickman (1996)</footer>
+            </blockquote>
+            <p>Los vínculos simbólicos que mantenemos con quienes perdemos forman parte natural del proceso de duelo saludable. Eternamente está diseñado con este principio como base: no para negar la pérdida, sino para honrar el amor que sigue presente.</p>
+            <a href="#" class="btn btn--ghost">Aprendé más sobre el duelo y las mascotas →</a>
+          </div>
+          <div class="science__logos reveal">
+            <p class="science__logos-label">Avalado por profesionales</p>
+            <div class="science__logos-grid">
+              <div class="science__logo-placeholder">Psicología Animal<br/>Argentina</div>
+              <div class="science__logo-placeholder">Asociación de<br/>Duelo Pet</div>
+              <div class="science__logo-placeholder">Colegio de<br/>Psicólogos</div>
+              <div class="science__logo-placeholder">PetGrief<br/>Institute</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════
+         SECTION 9 — FAQ
+    ═══════════════════════════════════════ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Preguntas frecuentes</p>
+          <h2 class="section-title" id="faq-heading">Todo lo que necesitás saber</h2>
+        </div>
+        <dl class="faq__list">
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-1">
+                ¿Cómo se genera el avatar de mi mascota?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-1">
+              <p>Subís entre 3 y 10 fotos de tu mascota desde distintos ángulos y con buena iluminación. Nuestro sistema analiza las fotos para capturar sus rasgos únicos — color de pelaje, forma de la cara, postura característica — y genera un avatar animado en minutos. No necesitás ningún conocimiento técnico, todo el proceso es guiado paso a paso.</p>
+            </dd>
+          </div>
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-2">
+                ¿Qué pasa con el memorial si cancelo mi suscripción?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-2">
+              <p>El perfil conmemorativo básico permanece activo siempre, aunque dejes de pagar. Las funciones premium (avatar animado, galería extendida, música) quedan pausadas, pero todo el contenido y las fotos se conservan intactos. Cuando quieras reactivar, el memorial sigue exactamente donde lo dejaste.</p>
+            </dd>
+          </div>
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-3">
+                ¿Pueden acceder otras personas al memorial?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-3">
+              <p>Vos elegís. Podés configurarlo como público (visible para cualquier persona con el link), privado (solo vos), o compartido (solo las personas que vos invitás con un código). Podés cambiar esta configuración en cualquier momento desde tu panel.</p>
+            </dd>
+          </div>
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-4">
+                ¿Qué fotos necesito subir para el avatar?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-4">
+              <p>Con 3 fotos podés empezar — idealmente una de frente, una de perfil y una de cuerpo entero. Fotos con luz natural funcionan mucho mejor que con flash. Mientras más fotos subás, más fiel será el avatar. Podés usar fotos del celular sin ningún problema, no hace falta equipo especial.</p>
+            </dd>
+          </div>
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-5">
+                ¿Es seguro subir fotos personales?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-5">
+              <p>Absolutamente. Las fotos se almacenan con cifrado en servidores seguros y nunca se comparten con terceros ni se usan para entrenar modelos de IA de otros. Solo vos (y las personas que autorices) pueden verlas. Podés eliminarlas en cualquier momento desde tu panel.</p>
+            </dd>
+          </div>
+
+          <div class="faq__item reveal">
+            <dt class="faq__question">
+              <button class="faq__btn" aria-expanded="false" aria-controls="faq-6">
+                ¿Puedo crear un memorial para más de una mascota?
+                <span class="faq__icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq__answer" id="faq-6">
+              <p>Sí, podés crear tantos memoriales como necesites desde la misma cuenta. Cada mascota tiene su propio espacio, perfil y avatar. Con el plan Memorial podés vincularlos en el árbol familiar de mascotas para mostrar todas sus historias juntas.</p>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <p class="footer__logo">Eternamente</p>
+          <p class="footer__tagline">El lugar donde tu mascota vive para siempre.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Links del footer">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#comunidad">Comunidad</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram de Eternamente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok de Eternamente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook de Eternamente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Eternamente. Todos los derechos reservados.</p>
+        <p class="footer__closing">Porque el amor no tiene fecha de vencimiento.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       MODAL — CREATE MEMORIAL
+  ═══════════════════════════════════════ -->
+  <div class="modal" id="create-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__panel">
+
+      <button class="modal__close" id="modal-close" aria-label="Cerrar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="modal__dots" aria-hidden="true">
+        <span class="modal__dot active"></span>
+        <span class="modal__dot"></span>
+        <span class="modal__dot"></span>
+      </div>
+
+      <!-- PAGE 1: Info -->
+      <div class="modal__page" id="modal-p1">
+        <p class="modal__eyebrow">Paso 1 de 3</p>
+        <h2 class="modal__title" id="modal-title">Contanos sobre tu mascota</h2>
+        <form class="modal__form" id="pet-form" novalidate>
+          <div class="form-group">
+            <label for="pet-name">Nombre <span aria-hidden="true">*</span></label>
+            <input type="text" id="pet-name" name="name" placeholder="¿Cómo se llamaba?" required autocomplete="off" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pet-species">Tipo</label>
+              <select id="pet-species" name="species">
+                <option value="dog">🐕 Perro</option>
+                <option value="cat">🐈 Gato</option>
+                <option value="rabbit">🐇 Conejo</option>
+                <option value="bird">🐦 Ave</option>
+                <option value="hamster">🐹 Hámster</option>
+                <option value="other">🐾 Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pet-born">Nacimiento</label>
+              <input type="date" id="pet-born" name="born" />
+            </div>
+            <div class="form-group">
+              <label for="pet-died">Partida</label>
+              <input type="date" id="pet-died" name="died" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pet-story">Un recuerdo favorito</label>
+            <textarea id="pet-story" name="story" rows="3" placeholder="Contá algo que la/lo haga único/a..."></textarea>
+          </div>
+        </form>
+        <div class="modal__footer">
+          <button class="btn btn--primary btn--full" id="step1-next">Continuar — Subir fotos</button>
+        </div>
+      </div>
+
+      <!-- PAGE 2: Photos -->
+      <div class="modal__page" id="modal-p2" hidden>
+        <p class="modal__eyebrow">Paso 2 de 3</p>
+        <h2 class="modal__title">Fotos de <span id="pet-name-step2">tu mascota</span></h2>
+        <p class="modal__subdesc">Con 3 fotos alcanza. Cuantas más subas, más fiel será el avatar. Hacé click en una foto para quitarla.</p>
+        <div class="upload-zone" id="upload-zone">
+          <input type="file" id="photo-input" accept="image/*" multiple tabindex="-1" />
+          <div class="upload-zone__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <p>Arrastrá fotos aquí o <strong>hacé click para elegir</strong></p>
+          <p class="upload-zone__hint">JPG, PNG o HEIC · hasta 10 fotos</p>
+        </div>
+        <div class="photo-grid" id="photo-grid"></div>
+        <p class="photo-count" id="photo-count" hidden></p>
+        <div class="modal__footer">
+          <button class="btn btn--ghost" id="step2-back">← Volver</button>
+          <button class="btn btn--primary btn--full" id="step2-next">Generar avatar</button>
+        </div>
+      </div>
+
+      <!-- PAGE 3: Generating -->
+      <div class="modal__page modal__page--gen" id="modal-p3" hidden>
+        <p class="modal__eyebrow">Generando avatar</p>
+        <h2 class="modal__title">Analizando a <span id="pet-name-step3">tu mascota</span>…</h2>
+        <div class="gen-avatar-wrap">
+          <canvas id="gen-canvas" width="240" height="240" aria-label="Avatar en generación"></canvas>
+        </div>
+        <div class="gen-progress-wrap">
+          <div class="gen-progress-bar-bg"><div class="gen-progress-fill" id="gen-fill"></div></div>
+        </div>
+        <p class="gen-status" id="gen-status" aria-live="polite">Analizando fotos…</p>
+      </div>
+
+      <!-- PAGE 4: Result -->
+      <div class="modal__page modal__page--result" id="modal-p4" hidden>
+        <div class="memorial-preview">
+          <div class="memorial-preview__av">
+            <canvas id="result-canvas" width="180" height="180" aria-label="Avatar de tu mascota"></canvas>
+          </div>
+          <h2 class="memorial-preview__name" id="result-name">Luna</h2>
+          <p class="memorial-preview__dates" id="result-dates">2010 – 2023</p>
+          <p class="memorial-preview__story" id="result-story"></p>
+          <span class="memorial-preview__badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Avatar IA · Plan Memorial
+          </span>
+        </div>
+        <div class="modal__footer modal__footer--result">
+          <p class="modal__result-note">Tu memorial está listo. Registrate para guardarlo y compartirlo.</p>
+          <button class="btn btn--primary btn--full" id="result-save">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Guardar el memorial de <span id="result-save-name">tu mascota</span>
+          </button>
+          <button class="btn btn--ghost btn--full" id="result-new">Crear otro memorial</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
