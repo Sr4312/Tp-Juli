@@ -32,13 +32,13 @@
 
   const COUNT = isMobile() ? 16 : 36;
 
-  /* Warm sparkle palette */
+  /* Cool sparkle palette */
   const colors = [
-    'rgba(232,201,122,',   /* gold */
-    'rgba(196,168,212,',   /* lavender */
-    'rgba(245,232,187,',   /* gold light */
-    'rgba(216,186,232,',   /* lavender light */
-    'rgba(255,245,220,',   /* warm white */
+    'rgba(110,143,224,',   /* light blue */
+    'rgba(50,79,162,',     /* primary blue */
+    'rgba(220,230,248,',   /* gold light equiv */
+    'rgba(220,228,245,',   /* lavender light equiv */
+    'rgba(255,255,255,',   /* white */
   ];
 
   function makeParticle() {
@@ -810,7 +810,7 @@
       const sy = (cy + breathe) + Math.sin(angle) * r * 0.52;
       const sa = (Math.sin(frame * 0.05 + i * 1.7) + 1) * 0.22 + 0.06;
       const sr = 3.5 + Math.sin(frame * 0.08 + i) * 1.5;
-      ctx.fillStyle = i % 2 === 0 ? `rgba(232,201,122,${sa})` : `rgba(196,168,212,${sa})`;
+      ctx.fillStyle = i % 2 === 0 ? `rgba(110,143,224,${sa})` : `rgba(50,79,162,${sa})`;
       ctx.save();
       ctx.translate(sx, sy);
       ctx.rotate(frame * 0.025 + i);
