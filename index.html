@@ -106,6 +106,94 @@
 
 
     <!-- ═══════════════════════════════════════
+         CAROUSEL BANNER
+    ═══════════════════════════════════════ -->
+    <section class="carousel-section" aria-label="Galería de momentos">
+      <div class="carousel" id="carousel" aria-roledescription="carrusel">
+
+        <div class="carousel__track" id="carouselTrack">
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="1 de 6">
+            <img class="carousel__img" src="assets/carousel/slide1.jpg" alt="Niño y su bulldog francés junto a la chimenea" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge">Memorial Digital</span>
+              <h2 class="carousel__title">Cada momento juntos es un tesoro</h2>
+              <p class="carousel__sub">Con SSEJA creás un espacio permanente para honrar el vínculo con tu mascota.</p>
+              <a href="#" class="btn btn--primary" data-modal="create">Crear mi memorial</a>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 6">
+            <img class="carousel__img" src="assets/carousel/slide2.jpg" alt="Hombre jugando con su golden retriever" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge carousel__badge--promo">1er mes gratis</span>
+              <h2 class="carousel__title">Esa energía. Ese amor. Para siempre.</h2>
+              <p class="carousel__sub">Subí tus fotos y nuestra IA crea un avatar animado que lo representa tal como era.</p>
+              <a href="#" class="btn btn--primary" data-modal="create">Comenzar ahora</a>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 6">
+            <img class="carousel__img" src="assets/carousel/slide3.jpg" alt="Niña y su perro Bernés mirándose de cerca" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge">Avatar con IA</span>
+              <h2 class="carousel__title">El amor entre ustedes no desaparece</h2>
+              <p class="carousel__sub">Un memorial digital con avatar animado generado desde tus propias fotos.</p>
+              <a href="#planes" class="btn btn--primary">Ver cómo funciona</a>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 6">
+            <img class="carousel__img" src="assets/carousel/slide4.jpg" alt="Hombre jugando con su perro blanco en el parque" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge">Desde $9.99 USD/mes</span>
+              <h2 class="carousel__title">Miles de familias ya honran a su mascota</h2>
+              <p class="carousel__sub">Unite a más de 12.000 personas que eligieron SSEJA para recordar a quien más quisieron.</p>
+              <a href="#planes" class="btn btn--primary">Ver planes</a>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="5 de 6">
+            <img class="carousel__img" src="assets/carousel/slide5.jpg" alt="Hombre y su border collie con frisbee en la ciudad" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge carousel__badge--promo">50% OFF — Primeros 3 meses</span>
+              <h2 class="carousel__title">Activo, único, irrepetible</h2>
+              <p class="carousel__sub">Creamos un avatar que captura su personalidad. Disponible para siempre, desde cualquier lugar.</p>
+              <a href="#" class="btn btn--primary" data-modal="create">Aprovechar descuento</a>
+            </div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="6 de 6">
+            <img class="carousel__img" src="assets/carousel/slide6.jpg" alt="Pareja con dos perros en la playa al atardecer" loading="lazy" />
+            <div class="carousel__overlay"></div>
+            <div class="carousel__content">
+              <span class="carousel__badge">Plan Familia</span>
+              <h2 class="carousel__title">Para toda tu familia, por siempre</h2>
+              <p class="carousel__sub">Memorials para todas tus mascotas en un solo lugar. Planes desde $9.99 USD/mes.</p>
+              <a href="#" class="btn btn--primary" data-modal="create">Crear memorial</a>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Diapositiva anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Diapositiva siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Seleccionar diapositiva"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
          SECTION 2 — QUÉ ES ESTO
     ═══════════════════════════════════════ -->
     <section class="features" id="que-es" aria-labelledby="features-heading">
