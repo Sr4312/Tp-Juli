@@ -678,15 +678,15 @@ section { padding: 104px 0; }
 
 .plans__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   align-items: center;
 }
 
 .plan-card {
   background: var(--cream);
   border-radius: var(--radius-xl);
-  padding: 44px 36px 40px;
+  padding: 40px 28px 36px;
   position: relative;
   border: 1px solid rgba(50,79,162,0.15);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -736,7 +736,7 @@ section { padding: 104px 0; }
 
 .plan-card__price {
   font-family: var(--font-display);
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 300;
   line-height: 1;
   margin-bottom: 10px;

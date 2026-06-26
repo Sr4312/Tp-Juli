@@ -5,7 +5,31 @@
       "Bash(python -m http.server 8765)",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/)",
-      "Bash(node --check \"c:/Users/salva/Desktop/tp juli mi amor/js/main.js\")"
+      "Bash(node --check \"c:/Users/salva/Desktop/tp juli mi amor/js/main.js\")",
+      "PowerShell(python -m http.server 8000 --directory \"c:\\\\Users\\\\salva\\\\Desktop\\\\tp juli mi amor\")",
+      "PowerShell(Start-Sleep -Seconds 1; \\(Invoke-WebRequest -Uri http://localhost:8000 -UseBasicParsing\\).StatusCode)",
+      "PowerShell(Invoke-WebRequest -Uri http://localhost:8000/css/styles.css -UseBasicParsing)",
+      "mcp__plugin_playwright_playwright__browser_run_code_unsafe",
+      "Bash(rtk git *)",
+      "Bash(rtk grep *)",
+      "Bash(rtk ls *)",
+      "Bash(rtk curl *)",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Read(//c/tmp/**)",
+      "Bash(rtk find *)",
+      "Bash(find / -maxdepth 10 -iname \"*.png\" -mmin -15 2>/dev/null | grep -vi node_modules | head -30)",
+      "Read(//c//**)",
+      "Bash(python -c \"from PIL import Image; print\\('ok'\\)\")",
+      "Bash(python3)",
+      "Bash(python)",
+      "Bash(cd \"/c/Users/salva/Desktop/tp juli mi amor\" && rm assets/logo.svg)",
+      "Bash(python -m http.server 8080)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8080)",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "Bash(rtk read *)"
+    ],
+    "additionalDirectories": [
+      "c:\\c\\Users\\salva\\Desktop\\tp juli mi amor\\assets"
     ]
   }
 }
